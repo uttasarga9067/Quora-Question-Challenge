@@ -1,48 +1,48 @@
 # Quora-Question-Challenge
-### This repository consists of an XG-Boost Model; trained using the Data from Quora Question Challenge: A Competition where we had to find out the score of redundant questions asked on Quora.
+### This repository consists of an XGBoost Model; trained using the Data from Quora Question Challenge: A Competition where we had to find out the score of redundant questions asked on Quora.
 
 #### The goal behind this prediction model is to identify whether the question which is being posted by a user is already been asked by another user; which will help to provide quicker resolutions and answers. We have to predict whether a pair of questions given are duplicates or not.
 
 ##### The Image below describes the training data provided in the challenge
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/1.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/1.png)
 
 ##### This describes about the various insights of the training data on which we will build our model.
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/2.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/2.png)
 
 ##### Number of times, total Questions occured (Histogram)
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/3.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/3.png)
 
 
 #### We observe that there is 37% of positive class in the Data set. This positive class is the total number of questions which are repeated. LogLoss from sklearn looks at the actual predictions (is_duplicate in our case) as opposed to the order in which the predictions are, we get a decent score by creating a submission predicting mean value of the label.
 
 ##### Here, we are exploring the test data set and looking at the variables present in the same.
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/4.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/4.png)
 
 #### We are provided with row ids and the questions which we have to check the redundancy for. We dont have any particular id for each question as we had for our training data set.
 
 ##### The distribution of Character count in both the training and test set.
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/5.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/5.png)
 
 #### Most of the questions have around 15 to 150 characters in them, while the steep cut-off at 150 Characters is the assumed character limit while posting a question on Quora.
 #### The next histogram is for word count in the whole data set. I am using spaces between two words to split them and count the words present.
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/6.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/6.png)
 
 #### The Word Cloud Package helps us to showcase the words according to their frequency in the Data.
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/7.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/7.png)
 
 #### The Analysis below is for the questions in training set.
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/8.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/8.png)
 
 
 ## Finally, the XGBoost Model for predicting the score of reduncancy in several questions on the test set.
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/9.PNG)
+![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/master/9.png)
 
 
 
