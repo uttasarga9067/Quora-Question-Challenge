@@ -5,7 +5,7 @@
 
 ##### The Image below describes the training data provided in the challenge
 
-![ScreenShot](https://raw.github.com/uttasarga9067/Quora-Question-Challenge/blob/main/1.PNG)
+![ScreenShot](https://github.com/uttasarga9067/Quora-Question-Challenge/blob/main/1.PNG)
 
 ##### This describes about the various insights of the training data on which we will build our model.
 
